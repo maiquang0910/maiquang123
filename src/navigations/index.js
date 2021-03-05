@@ -6,7 +6,7 @@ import Products from '../screens/Products';
 
 const Stack = createStackNavigator();
 
-function  RootNativation() {
+function RootNativation() {
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{
