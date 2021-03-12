@@ -19,15 +19,15 @@ function Login({ navigation }) {
 	const [password, setPassword] = useState('');
 
 	const handleLogin = () => {
-		if (username.trim() === '') {
+		if(username.trim() === '') {
 			return Alert.alert('Tài khoản không được để trống');
 		}
 
-		if (password.trim() === '') {
+		if(password.trim() === '') {
 			return Alert.alert('Mật khẩu không được để trống');
 		}
 
-		if (username !== Users.username || password !== Users.password) {
+		if(username !== Users.username || password !== Users.password) {
 			return Alert.alert('Tài khoản hoặc mật khẩu không đúng');
 		}
 
